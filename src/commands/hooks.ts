@@ -410,7 +410,7 @@ async function ingestHookEvent(args: HooksIngestArgs): Promise<void> {
 			event: args.event,
 			metadata: args.metadata,
 		}),
-		3000,
+		15000,
 		"kanban hooks ingest",
 	);
 	if (ingestResponse.ok === false) {
